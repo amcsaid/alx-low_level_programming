@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*
+/**
  * main - start of program
  * Description: Randow number is positive or negative
- * Return: 0
+ * Return: always returns 0
  */
 int main(void)
 {
