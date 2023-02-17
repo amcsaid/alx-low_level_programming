@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* 
+/*
  * main - start of program
  * Description: Randow number is positive or negative
  * Return: 0
