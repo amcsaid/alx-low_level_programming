@@ -13,11 +13,8 @@ int main(void)
 	for (n = 48; n < 58; n++)
 	{
 		putchar(n);
-		for (m = 48; m < 58; m++)
-		{
-			putchar(m);
-		}
 		putchar(44);
+		purchar(160);
 
 	}
 	putchar(10);
