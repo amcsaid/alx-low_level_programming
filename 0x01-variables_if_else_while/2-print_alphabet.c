@@ -13,5 +13,6 @@ int main(void)
 	for (n = 79; n < 123; n++)
 	{
 		putchar(n);
-	}	
+	}
+	return (0);
 }
