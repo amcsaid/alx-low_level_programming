@@ -17,7 +17,7 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 		puts("is positive");
-	if else (n == 0)
+	else if (n == 0)
 		puts("is zero");
 	else
 		puts("is negative");
