@@ -20,7 +20,7 @@ int main(void)
 		while (m <= '9')
 		{
 			k = m + 1;
-			while(k <= '9')
+			while (k <= '9')
 			{
 				putchar(n);
 				putchar(m);
