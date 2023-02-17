@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int n, m;
+	int n, m, k;
 
 	n = '0';
 	m = '0';
