@@ -15,17 +15,18 @@ int main(void)
 
 	while (n <= 57)
 	{
-		putchar(n);
 		while (m <= 57)
 		{
+			putchar(n);
 			putchar(m);
 			if (n != 57 && m != 57)
 			{
 				putchar(44);
 				putchar(32);
 			}
-		m++;
+			m++;
 		}
+		m = 48;
 		n++;
 
 	}
