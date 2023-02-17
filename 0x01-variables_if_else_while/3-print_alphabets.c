@@ -14,10 +14,11 @@ int main(void)
 	{
 		putchar(n);
 	}
+	
 	for (n = 65; n < 91; n++)
-        {
-                putchar(n);
-        }
+	{
+		putchar(n);
+	}
 	putchar(10);
 	return (0);
 }
