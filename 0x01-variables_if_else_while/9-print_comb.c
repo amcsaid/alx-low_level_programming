@@ -9,12 +9,13 @@
 int main(void)
 {
 	int n;
-
-	for (n = 48; n < 58; n++)
+	n = 48;
+	while (n < 58)
 	{
 		putchar(n);
 		putchar(44);
-		putchar(30);
+		putchar(32);
+		n++;
 
 	}
 	putchar(10);
