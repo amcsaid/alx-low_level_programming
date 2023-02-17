@@ -10,23 +10,23 @@ int main(void)
 {
 	int n, m;
 
-	n = 48;
-	m = 48;
+	n = '0';
+	m = '0';
 
-	while (n <= 57)
+	while (n <= '9')
 	{
-		while (m <= 57)
+		while (m <= '9')
 		{
 			putchar(n);
 			putchar(m);
-			if (n != 57 && m != 57)
+			if ((n != '9') && (m != '9'))
 			{
-				putchar(44);
-				putchar(32);
+				putchar(',');
+				putchar(' ');
 			}
 			m++;
 		}
-		m = 48;
+		m = '0';
 		n++;
 
 	}
