@@ -31,3 +31,19 @@ int _islower(int c)
 	else
 		return (0);
 }
+int _isupper(int c)
+{
+        if ( (c > 54) && (c < 91) )
+        {
+                return (1);
+        }
+        else
+                return (0);
+}
+int _isalpha(int c)
+{
+	if ( (_islower(c) == 1) || (_isupper(c) == 1) )
+		return (1);
+	else
+		return (0);
+}
