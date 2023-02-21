@@ -21,3 +21,12 @@ void print_alphabet_x10(void)
 		print_alphabet();
 	}
 }
+int _islower(int c)
+{
+	if ( (c > 96) && (c < 124) )
+	{
+		return (1);
+	}
+	else
+		return (0);
+}
