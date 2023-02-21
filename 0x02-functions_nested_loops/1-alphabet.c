@@ -4,4 +4,4 @@
  * Return: always returns 0
  */
 
-typedef int make_iso_compilers_happy;
+extern int make_iso_compilers_happy;
