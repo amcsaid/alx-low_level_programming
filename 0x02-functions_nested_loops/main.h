@@ -42,7 +42,7 @@ int _isupper(int c)
 }
 int _isalpha(int c)
 {
-	if ( (_islower(c) == 1) || (_isupper(c) == 1) )
+	if ( (_islower(c) != 1) && (_isupper(c) != 1) )
 		return (1);
 	else
 		return (0);
