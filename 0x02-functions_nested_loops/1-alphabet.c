@@ -7,6 +7,5 @@
  */
 int maintwo(void)
 {
-    print_alphabet();
     return (0);
 }
