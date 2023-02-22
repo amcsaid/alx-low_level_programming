@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "9-times_table.c"
 int _putchar(char);
 
 void print_alphabet(void)
