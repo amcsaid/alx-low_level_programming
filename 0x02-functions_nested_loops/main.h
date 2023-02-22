@@ -74,3 +74,25 @@ int print_last_digit(int n)
 {
 	return (n%10);
 }
+void jack_bauer(void)
+{
+	char a, b, c, d = '0';
+	for (a = '0';a < '2'; a++)
+	{
+		putchar(a);
+		for (b = '0';b < '4'; b++)
+		{
+			putchar(b);
+			putchar(':');
+			for (c = '0';c < '6'; c++)
+			{
+				putchar(c);
+				for (d = '0';d <= '9'; d++)
+				{
+					putchar(d);
+					putchar('\n');
+				}
+			}
+		}
+	}
+}
