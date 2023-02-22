@@ -77,9 +77,9 @@ int print_last_digit(int n)
 void jack_bauer(void)
 {
 	char a, b, c, d;
-	for (a = '0';a < '2'; a++)
+	for (a = '0';a <= '2'; a++)
 	{
-		for (b = '0';b < '4'; b++)
+		for (b = '0';b <= '3'; b++)
 		{
 			for (c = '0';c < '6'; c++)
 			{
