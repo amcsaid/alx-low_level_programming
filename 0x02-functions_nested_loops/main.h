@@ -88,6 +88,7 @@ void jack_bauer(void)
 					putchar(a);
 					putchar(b);
 					putchar(':');
+					putchar(c);
 					putchar(d);
 					putchar('\n');
 				}
