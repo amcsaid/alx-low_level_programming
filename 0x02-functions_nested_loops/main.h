@@ -72,7 +72,7 @@ int _abs(int n)
 }
 int print_last_digit(int n)
 {
-	putchar(n%10);
+	_putchar('0' + n%10);
 	return (n%10);
 }
 void jack_bauer(void)
