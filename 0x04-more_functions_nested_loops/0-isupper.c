@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _isupper - check the code
  * @c: integer input
