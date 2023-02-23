@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isupper - check the code
+ * _isdigit - check the code
  * @c: integer input
  * Description: check if a caracter or not
  * Return: 0 or 1
