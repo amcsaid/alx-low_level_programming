@@ -1,5 +1,6 @@
 /**
  * _isupper - check the code
+ * @c: integer input
  * Description: check if a caracter or not
  * Return: 0 or 1
  */
