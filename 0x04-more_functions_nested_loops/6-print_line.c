@@ -2,7 +2,7 @@
 
 /**
  * print_line - check the code
- * @n: intiger 
+ * @n: intiger
  * Description: prints a line
  */
 
