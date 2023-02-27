@@ -8,7 +8,7 @@
 
 void print_rev(char *s)
 {
-	int lenght = _strlen(*s);
+	int lenght = _strlen(s);
 	char *last = s + lenght;
 
 
