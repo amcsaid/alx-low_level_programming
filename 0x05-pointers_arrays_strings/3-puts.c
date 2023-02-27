@@ -11,9 +11,9 @@ void _puts(char *str)
 {
 	int count = 0;
 
-	while (*s != '\0')
+	while (*str != '\0')
 	{
-		_purchar(*s);
-		s++;
+		_purchar(*str);
+		str++;
 	}
 }
