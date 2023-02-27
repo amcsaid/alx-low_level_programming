@@ -9,7 +9,7 @@
 void print_rev(char *s)
 {
 	int lenght = _strlen(s);
-	char *last = s + lenght;
+	char *last = s + lenght - 1;
 
 
 	while (last != s)
@@ -19,8 +19,7 @@ void print_rev(char *s)
 	}
 	if (lenght != 0)
 		_putchar(*last);
-	_putchar('\n');
-	_putchar('\0');	
+	_putchar('\n');	
 }
 
 /**
