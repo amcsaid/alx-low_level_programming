@@ -12,22 +12,29 @@ void print_rev(char *s)
 	char *last = s + lenght;
 
 
-	while (last != s)
+	while (last != (s - 1))
 	{
 		_putchar(*last);
 		last--;
 	}
 	_putchar('\n');
 }
+
+/**
+ * _strlen - check the code
+ * @s: char pointer as an input
+ * Description: Pointers manipulation
+ */
+
 int _strlen(char *s)
 {
-        int count = 0;
+	int count = 0;
 
-        while (*s != '\0')
-        {
-                s++;
-                count++;
-        }
+	while (*s != '\0')
+	{
+		s++;
+		count++;
+	}
 
-        return (count);
+	return (count);
 }
