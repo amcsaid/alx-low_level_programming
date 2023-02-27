@@ -5,6 +5,7 @@
  * _strlen - check the code
  * @s: chqr pointer input
  * Description: Pointers manipulation
+ * Return: length of string
  */
 
 int _strlen(char *s)
@@ -17,5 +18,5 @@ int _strlen(char *s)
 		count++;
 	}
 
-	return count;
+	return (count);
 }
