@@ -3,7 +3,7 @@
 
 /**
  * _puts - check the code
- * @s: char pointer as an input
+ * @str: char pointer as an input
  * Description: Pointers manipulation
  */
 
