@@ -17,7 +17,7 @@ void print_rev(char *s)
 		_putchar(*last);
 		last--;
 	}
-	if (length != 0)
+	if (lenght != 0)
 		_putchar(*last);
 	_putchar('\n');
 }
