@@ -12,11 +12,12 @@ void print_rev(char *s)
 	char *last = s + lenght;
 
 
-	while (last != (s - 1))
+	while (last != s)
 	{
 		_putchar(*last);
 		last--;
 	}
+	_putchar(*last);
 	_putchar('\n');
 }
 
@@ -24,6 +25,7 @@ void print_rev(char *s)
  * _strlen - check the code
  * @s: char pointer as an input
  * Description: Pointers manipulation
+ * Return: lenght of string
  */
 
 int _strlen(char *s)
