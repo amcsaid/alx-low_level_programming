@@ -11,14 +11,15 @@ void print_rev(char *s)
 	int lenght = _strlen(s);
 	char *last = s + lenght - 1;
 
-
-	while (last != s)
-	{
-		_putchar(*last);
-		last--;
-	}
 	if (lenght != 0)
+	{
+		while (last != s)
+		{
+			_putchar(*last);
+			last--;
+		}
 		_putchar(*last);
+	}
 	_putchar('\n');	
 }
 
