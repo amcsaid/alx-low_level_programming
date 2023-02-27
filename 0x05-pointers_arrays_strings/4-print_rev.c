@@ -8,7 +8,7 @@
 
 void print_rev(char *s)
 {
-	int lenght;
+	int lenght = _strlen(*s);
 	char *last = s + lenght;
 
 
@@ -18,4 +18,16 @@ void print_rev(char *s)
 		last--;
 	}
 	_putchar('\n');
+}
+int _strlen(char *s)
+{
+        int count = 0;
+
+        while (*s != '\0')
+        {
+                s++;
+                count++;
+        }
+
+        return (count);
 }
