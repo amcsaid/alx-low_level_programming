@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - check the code
- * @*n: integer pointer input
+ * @n: integer pointer input
  * Description: resets the value of the variable pointed
  */
 
