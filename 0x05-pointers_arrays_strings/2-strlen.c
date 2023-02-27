@@ -1,0 +1,18 @@
+#include "main.h"
+
+/**
+ * _strlen - check the code
+ * @s: chqr pointer input
+ * Description: Pointers manipulation
+ */
+
+int _strlen(char *s)
+{
+	int count = 0;
+
+	while (*s != NULL)
+	{
+		(*s)++;
+		count++;
+	}
+}
