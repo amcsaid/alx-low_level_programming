@@ -20,6 +20,7 @@ void print_rev(char *s)
 	if (lenght != 0)
 		_putchar(*last);
 	_putchar('\n');
+	_putchar('\0');	
 }
 
 /**
