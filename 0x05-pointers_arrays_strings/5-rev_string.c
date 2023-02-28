@@ -8,19 +8,14 @@
 
 void rev_string(char *s)
 {
-	int i, lenght = _strlen(s);
-	char swap = &s;
-
-	if (lenght != 0)
+	int len = strlen(s);
+	for (int i = 0; i < len / 2; i++)
 	{
-		for (i = 0; i < lenght ; i++)
-		{
-			*s++ = swap[lenght - i];
-		}
+		char temp = s[i];
+		s[i] = s[len - i - 1];
+		s[len - i - 1] = temp;
 	}
-	_putchar('\n');
 }
-
 /**
  * _strlen - check the code
  * @s: char pointer as an input
