@@ -8,13 +8,13 @@
 
 void rev_string(char *s)
 {
-	int lenght = _strlen(s);
+	int i, lenght = _strlen(s);
 	char *last = s + lenght - 1;
-	char swap[lenght] = s;
+	char *swap = *s;
 
 	if (lenght != 0)
 	{
-		for (int i = 0; i < length ; i++)
+		for (i = 0; i < length ; i++)
 		{
 			*s = swap[length - i];
 		}
