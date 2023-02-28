@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_rev - check the code
+ * rev_string - check the code
  * @s: char pointer as an input
  * Description: Pointers manipulation
  */
@@ -13,6 +13,7 @@ void rev_string(char *s)
 	for (i = 0; i < len / 2; i++)
 	{
 		char temp = s[i];
+
 		s[i] = s[len - i - 1];
 		s[len - i - 1] = temp;
 	}
