@@ -17,7 +17,7 @@ void _puts(char *str)
 	_putchar('\n');
 }
 /**
- * _puts - check the code
+ * puts_half - check the code
  * @str: char pointer as an input
  * Description: Pointers manipulation
  */
@@ -27,7 +27,7 @@ void puts_half(char *str)
 	int length_of_the_string = _strlen(str);
 	int n = (length_of_the_string - 1) / 2;
 
-	_puts(str + (length_of_the_string - n));
+	_puts(str + (length_of_the_string - n + 1));
 
 }
 /**
