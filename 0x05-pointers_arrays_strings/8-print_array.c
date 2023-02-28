@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * puts_half - check the code
- * @str: char pointer as an input
+ * print_array - check the code
+ * @a: array pointer
+ * @n: number of elements to print
  * Description: Pointers manipulation
  */
 
@@ -11,8 +12,7 @@ void print_array(int *a, int n)
 {
 	int i;
 	
-	for (i = 0; i < n; i++) {
-		printf("%d ", a[i]);
-	}
+	for (i = 0; i < n; i++)
+		printf("%d ,", a[i]);
 	printf("\n");
 }
