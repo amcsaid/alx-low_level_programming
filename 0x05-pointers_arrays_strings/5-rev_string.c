@@ -9,14 +9,13 @@
 void rev_string(char *s)
 {
 	int i, lenght = _strlen(s);
-	char *last = s + lenght - 1;
-	char *swap = s;
+	char swap = s;
 
 	if (lenght != 0)
 	{
-		for (i = 0; i < length ; i++)
+		for (i = 0; i < lenght ; i++)
 		{
-			*s = swap[length - i];
+			*s = swap[lenght - i];
 		}
 	}
 	_putchar('\n');
