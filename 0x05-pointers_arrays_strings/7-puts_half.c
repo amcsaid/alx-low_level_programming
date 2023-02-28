@@ -24,10 +24,14 @@ void _puts(char *str)
 
 void puts_half(char *str)
 {
-	int length_of_the_string = _strlen(str);
-	int n = (length_of_the_string - 1) / 2;
+	int n, length_of_the_string = _strlen(str);
 
-	_puts(str + (length_of_the_string - n - 1));
+	if (length_of_the_string % 2 == 0)
+		n = length_of_the_string / 2;
+	else
+		n = (length_of_the_string - 1) / 2;
+
+	_puts(str + (length_of_the_string - n));
 
 }
 /**
