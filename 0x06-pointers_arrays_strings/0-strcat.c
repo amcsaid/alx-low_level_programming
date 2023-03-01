@@ -11,7 +11,7 @@ char *_strcat(char *dest, char *src)
 {
 	int i = 0, j, len = _strlen(src);
 
-	while (true)
+	while (1)
 	{
 		if (dest[i] == '\0')
 		{
