@@ -13,6 +13,8 @@ char *_strcat(char *dest, char *src)
 
 	while (1)
 	{
+		if (len == 0)
+			break;
 		if (dest[i] == '\0')
 		{
 			for (j = 0; j <= len; j++)
