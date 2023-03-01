@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - check the code
+ * _strncat - check the code
  * @dest: char pointer as an input
  * @src: char pointer as an input
  * @n: number of chars to copy
