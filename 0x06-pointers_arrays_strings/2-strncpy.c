@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * _strncpy - check the code
@@ -10,6 +11,44 @@
  */
 
 char *_strncpy(char *dest, char *src, int n)
+{
+	char *swap = "";
+
+	swap = _strncat(swap, src, n);
+
+	dest = _strcat(swap, dest);
+
+	return (dest);
+}
+/**
+ * _strlen - check the code
+ * @s: char pointer as an input
+ * Description: Pointers manipulation
+ * Return: lenght of string
+ */
+
+int _strlen(char *s)
+{
+	int count = 0;
+
+	while (*s != '\0')
+	{
+		s++;
+		count++;
+	}
+
+	return (count);
+}
+/**
+ * _strncat - check the code
+ * @dest: char pointer as an input
+ * @src: char pointer as an input
+ * @n: number of chars to copy
+ * Description: Pointers manipulation
+ * Return: pointer to result string
+ */
+
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0, j, len = _strlen(src);
 
@@ -33,22 +72,34 @@ char *_strncpy(char *dest, char *src, int n)
 
 	return (dest);
 }
+
 /**
- * _strlen - check the code
- * @s: char pointer as an input
+ * _strcat - check the code
+ * @dest: char pointer as an input
+ * @src: char pointer as an input
  * Description: Pointers manipulation
- * Return: lenght of string
+ * Return: pointer to result string
  */
 
-int _strlen(char *s)
+char *_strcat(char *dest, char *src)
 {
-	int count = 0;
+	int i = 0, j, len = _strlen(src);
 
-	while (*s != '\0')
+	while (1)
 	{
-		s++;
-		count++;
+		if (len == 0)
+			break;
+		if (dest[i] == '\0')
+		{
+			for (j = 0; j <= len; j++)
+			{
+				dest[i] = src[j];
+				i++;
+			}
+			break;
+		}
+		i++;
 	}
 
-	return (count);
+	return (dest);
 }
