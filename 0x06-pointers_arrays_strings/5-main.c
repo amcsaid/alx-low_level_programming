@@ -12,7 +12,7 @@ int main(void)
     char *ptr;
 	
     printf("Call funciton with str and save to *ptr \n");
-    ptr = string_toupper(str);
+    ptr = str;
     printf("Content of the pointer ptr: %s \n", ptr);
     printf("Contrnt of the string str: %s \n", str);
     return (0);

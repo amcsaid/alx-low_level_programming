@@ -7,18 +7,13 @@
  * Description: Pointers manipulation
  * Return: uppercase string point
  */
-char *string_toupper(char *strs)
+char *string_toupper(char *str)
 {
-	int i = 0;
-
-	while (*strs != '\0')
+	while (*str != '\0')
 	{
-		if (*strs >= 'a' && *strs <= 'z')
-			*strs = *strs - 32;
-		strs++;
-		i++;
+		if (*str >= 'a' && *str <= 'z')
+			*str = *str - 'A';
+		str++;
 	}
-	strs = strs - i;
-
-	return (strs);
+	return (str);
 }
