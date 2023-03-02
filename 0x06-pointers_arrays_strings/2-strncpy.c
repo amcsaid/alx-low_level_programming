@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stddef.h>
-
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * _strncpy - check the code
  * @dest: char pointer as an input
@@ -12,10 +13,20 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *swap = _strncat("", src, n);
+	char *swap = malloc(n + _strlen(dest));
+	if (!swap) {
+		return NULL;
+	}
 
+	swap[0] = '\0';
+
+
+	swap = _strncat(swap, src, n);
+
+	
 	dest = _strcat(swap, dest);
 
+	src = dest;
 	return (dest);
 }
 /**
