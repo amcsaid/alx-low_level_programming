@@ -2,18 +2,40 @@
 #include <stddef.h>
 
 /**
- * string_toupper - check the code
- * @str: char pointer as an input
+ * scap_string - check the code
+ * @strs: char pointer as an input
  * Description: Pointers manipulation
  * Return: uppercase string point
  */
-char *string_toupper(char *str)
+char *cap_string(char *strs)
 {
-	while (*str != '\0')
+	int i = 0;
+
+	while (*strs != '\0')
 	{
-		if (*str >= 'a' && *str <= 'z')
-			*str = *str - 'A';
-		str++;
+		if (*strs == ',' ||
+		*strs == ';' ||
+		*strs == '.' ||
+		*strs == '!' ||
+		*strs == '?' ||
+		*strs == '"' ||
+		*strs == '(' ||
+		*strs == ')' ||
+		*strs == '{' ||
+		*strs == '}' ||
+		*strs == ' ' ||
+		*strs == '\n' ||
+		*strs == '\t')
+		{
+			strs++;
+			i++;
+			if (*strs >= 'a' && *strs <= 'z')
+				*strs = *strs - 32;
+		}
+		strs++;
+		i++;
 	}
-	return (str);
+	strs = strs - i;
+
+	return (strs);
 }
