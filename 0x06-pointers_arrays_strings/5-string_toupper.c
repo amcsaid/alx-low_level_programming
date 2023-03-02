@@ -3,7 +3,7 @@
 
 /**
  * string_toupper - check the code
- * @str: char pointer as an input
+ * @strs: char pointer as an input
  * Description: Pointers manipulation
  * Return: uppercase string point
  */
