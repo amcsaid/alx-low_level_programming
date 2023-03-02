@@ -12,9 +12,7 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *swap = "";
-
-	swap = _strncat(swap, src, n);
+	char *swap = _strncat("", src, n);
 
 	dest = _strcat(swap, dest);
 
