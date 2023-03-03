@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * scap_string - check the code
+ * cap_string - check the code
  * @strs: char pointer as an input
  * Description: Pointers manipulation
  * Return: uppercase string point
@@ -32,7 +32,7 @@ char *cap_string(char *strs)
 			if (*strs >= 'a' && *strs <= 'z')
 			{
 				*strs = *strs - 32;
-			} else 
+			} else
 			{
 				strs--;
 				i--;
