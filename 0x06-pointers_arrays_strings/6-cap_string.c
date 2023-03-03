@@ -30,7 +30,13 @@ char *cap_string(char *strs)
 			strs++;
 			i++;
 			if (*strs >= 'a' && *strs <= 'z')
+			{
 				*strs = *strs - 32;
+			} else 
+			{
+				strs--;
+				i--;
+			}
 		}
 		strs++;
 		i++;
