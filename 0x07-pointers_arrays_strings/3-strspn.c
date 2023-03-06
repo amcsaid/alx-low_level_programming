@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stddef.h>
-
 /**
  *  _strspn - check the code
  * @s: pointer to string to search
@@ -10,20 +9,19 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	char *c;
-	int t = 0, i = 0;
+	char *ss = s, c;
 
-	for (c = accept; *c; c++)
+
+	while (*s)
 	{
-		while (*s != '\0')
+		for (c = accept; *c; c++)
 		{
-			if (*s == c)
-				t++;
-			s++;
-			i++;
+			if (*s == *c)
+				break;
 		}
-		s = s - i;
-		i = 0;
+		if (*c == '\0)
+			break;
+		s++;
 	}
-	return (t);
+	return (s - ss);
 }
