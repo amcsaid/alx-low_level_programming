@@ -11,16 +11,13 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	nt i = 0;
+	unsigned int i = 0;
 
-	while (*strs != '\0')
+	while (i < n)
 	{
-		if (*strs >= 'a' && *strs <= 'z')
-			*strs = *strs - 32;
-		strs++;
+		s[i] = b;
 		i++;
 	}
-	strs = strs - i;
 
-	return (strs);
+	return (s);
 }
