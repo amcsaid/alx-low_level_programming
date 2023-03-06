@@ -12,17 +12,18 @@ unsigned int _strspn(char *s, char *accept)
 	char *c;
 	int t = 0, i = 0;
 
-	for (c = accept; *c; c++)
+	while (*accept !='\0')
 	{
 		while (*s != '\0')
 		{
-			if (s == c)
+			if (s == accept)
 				t++;
 			s++;
 			i++;
 		}
 		s = s - i;
 		i = 0;
+		accept++;
 	}
 	return (t);
 }
