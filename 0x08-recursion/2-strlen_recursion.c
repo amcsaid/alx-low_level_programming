@@ -5,6 +5,7 @@
  * _strlen_recursion - check the code
  * @s: char pointer as an input
  * Description: Pointers manipulation
+ * Return: int size of string
  */
 int _strlen_recursion(char *s)
 {
