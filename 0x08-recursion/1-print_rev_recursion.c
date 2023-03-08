@@ -2,11 +2,11 @@
 #include <stddef.h>
 
 /**
- * _puts_recursion - check the code
+ * _print_rev_recursion - check the code
  * @s: char pointer as an input
  * Description: Pointers manipulation
  */
-void _puts_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
 	if (s[0] != '\0')
 	{
