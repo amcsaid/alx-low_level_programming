@@ -27,7 +27,7 @@ int is_prime_number_help(int n, int i)
 {
 	if (n % i == 0)
 	{
-		if (n == c)
+		if (n == i)
 			return (1);
 		else
 			return (0);
