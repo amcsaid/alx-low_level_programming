@@ -21,7 +21,7 @@ int is_prime_number(int n)
  * Description: Recursion manipulation
  * Return: is prime or not
  */
-int is_prime_number_help(int n, int i)
+int is_prime_number_help(unsigned int n, unsigned int i)
 {
 	if (n % i == 0)
 	{
