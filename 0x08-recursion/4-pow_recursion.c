@@ -1,19 +1,18 @@
 #include "main.h"
 #include <stddef.h>
-
 /**
- * is_prime_number - check the code
- * @n: int input
- * Description: Recursion manipulation
- * Return: is prime or not
+ * _pow_recursion - check the code
+ * @x: int intput
+ * @y: int input
+ * Description: Pointers manipulation
+ * Return: factorial of a number
  */
-int is_prime_number(int n)
+int _pow_recursion(int x, int y)
 {
-	if (n == 1)
+	if (y > 0)
+	{
+		return (x, _pow_recursion(x, y - 1));
+	}
+	else if (y == 0)
 		return (1);
-	else if (n == 0)
-		return (0);
-	else if (n > 1)
-		return (is_prime_number(n - 1));
-	return (0);
 }
