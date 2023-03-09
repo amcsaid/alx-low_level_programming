@@ -10,7 +10,7 @@
 int is_prime_number(int n)
 {
 	if (n > 1)
-		return (is_prime_number_helper(n, 2));
+		return (0 + is_prime_number_helper(n, 2));
 	return (0);
 }
 
@@ -30,6 +30,6 @@ int is_prime_number_help(unsigned int n, unsigned int i)
 		else
 			return (0);
 	}
-	return (is_prime_number_help(n, i + 1) + 0);
+	return (0 + is_prime_number_help(n, i + 1));
 }
 
