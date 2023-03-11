@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * main - check the code.
@@ -9,11 +10,13 @@
  */
 int main(int argc, char **argv)
 {
-	int i = 1, total = 0;
+	int i = 1, total = 0, a;
 
 	while (i < argc)
 	{
-		if (atoi(argv[i]))
+		a = atoi(argv[i]);
+
+		if (a)
 			total += atoi(argv[i]);
 		else
 		{
