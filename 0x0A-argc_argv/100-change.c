@@ -31,5 +31,6 @@ int main(int argc, char **argv)
 		c = c + rest / coins[i];
 		rest = rest - ((rest / coins[i]) * coins[i]);
 	}
+	printf("%d\n", c);
 	return (0);
 }
