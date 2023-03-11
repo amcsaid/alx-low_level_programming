@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+#include <string.h>
+
 /**
  * main - check the code.
  * @argc: number of args
@@ -9,24 +10,14 @@
  */
 int main(int argc, char **argv)
 {
-	int i = 1, total = 0, a, j;
+	int i = 1, total = 0, a;
 
 	while (i < argc)
 	{
 		a = atoi(argv[i]);
 
 		if (a)
-		{
-			for (j = 0; argv[i][j] != '\0'; j++)
-			{
-				if (!isdigit(argv[i][j]))
-				{
-					printf("Error\n");
-					return (1);
-				}
-			}
-			total += a;
-		}
+			total += atoi(argv[i]);
 		else
 		{
 			printf("Error\n");
