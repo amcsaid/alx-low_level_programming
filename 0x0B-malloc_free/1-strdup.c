@@ -11,9 +11,9 @@
 char *_strdup(char *str)
 {
 	char *ar;
-	unsigned int i, size;
+	int size;
 
-	size = strlen(str);
+	size = strlen(str) + 1;
 
 	if (size == 0 || str == NULL)
 		return (NULL);
@@ -23,8 +23,7 @@ char *_strdup(char *str)
 	if (ar == NULL)
 		return (NULL);
 
-	for (i = 0; i < size ; i++)
-		ar[i] = str[i];
+	memcpy (ar, str, size);
 
 	return (ar);
 }
