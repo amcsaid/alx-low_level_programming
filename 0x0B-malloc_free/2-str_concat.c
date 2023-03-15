@@ -23,8 +23,5 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	ar = strdup(s1);
-	ar = ar + size;
-	ar = strdup(s2);
-	ar = ar - size;
 	return (ar);
 }
