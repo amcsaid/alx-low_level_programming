@@ -23,5 +23,6 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	ar = strdup(s1);
+	ar + size - 1 = strdup(s2);
 	return (ar);
 }
