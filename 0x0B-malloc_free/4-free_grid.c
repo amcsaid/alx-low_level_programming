@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * free_grid - frees a 2 dimensional grid previously created by alloc_grid
  *
@@ -8,7 +10,9 @@
  */
 void free_grid(int **grid, int height)
 {
-	for (int i = 0; i < height; i++)
+	int i;
+
+	for (i = 0; i < height; i++)
 	{
  		free(grid[i]);
 	}
