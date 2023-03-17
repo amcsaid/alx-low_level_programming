@@ -3,10 +3,10 @@
 #include <string.h>
 
 /**
- * _calloc - Allocates memory for an array of elements and sets it to zero.
+ * array_range - Allocates memory for an array of ints
  *
- * @nmemb: The number of elements to allocate memory for.
- * @size: The size of each element in bytes.
+ * @min: starting int
+ * @max: ending int
  *
  * Return: A pointer to the allocated memory, or NULL if nmemb or size is 0
  *         or if malloc fails.
