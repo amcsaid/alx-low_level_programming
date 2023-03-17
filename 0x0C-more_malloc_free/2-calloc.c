@@ -1,3 +1,7 @@
+#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
+
 /**
  * _calloc - Allocates memory for an array of elements and sets it to zero.
  *
