@@ -11,10 +11,10 @@ int main(void)
 
 	while (*s)
 	{
-		write (2, s, 1);
+		write(2, s, 1);
 		s++;
 	}
-	return (0);
+	return (1);
 }
 
 
