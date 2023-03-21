@@ -2,11 +2,14 @@
 #include "dog.h"
 
 /**
- * is_prime_number - check the code
- * @n: int input
- * Description: Recursion manipulation
- * Return: is prime or not
+ * init_dog - initializes a dog structure
+ *
+ * @d: pointer to the dog structure to be initialized
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
  */
+
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != NULL)
